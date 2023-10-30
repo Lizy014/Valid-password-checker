@@ -13,7 +13,8 @@
 # re is imported to check specific pattern in the password
 import re
 
-def password_checker(password):
+#define the function
+def valid_password_checker(password):
   
   
   #check length 
@@ -35,8 +36,9 @@ def password_checker(password):
   return True
 
 #Test the function
-password = input("Enter your password")
-if password_checker(password):
+password = input("Enter your password") #Requests user to Enter Password.
+if valid_password_checker(password): #prints Valid password if the entered password is True in all the if statement.
   print("Valid password.")
-else:
+else:  #prints Invalid password if the entered password returns False (not True) in any of the if statments.
   print("Invalid password")
+
