@@ -37,8 +37,8 @@ def valid_password_checker(password):
 
 #Test the function
 password = input("Enter your password") #Requests user to Enter Password.
-if valid_password_checker(password): #prints Valid password if the entered password is True in all the if statement.
+if valid_password_checker(password): #prints "Valid password" if the entered password is True in all the if statements.
   print("Valid password.")
-else:  #prints Invalid password if the entered password returns False (not True) in any of the if statments.
-  print("Invalid password")
+else:  #prints "Please enter a valid password" if the entered password returns False (not True) in any of the if statments.
+  print("Please enter a valid password. ")
 
